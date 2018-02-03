@@ -1,0 +1,230 @@
+#wrapper {
+    background-color:#FFFFFF;
+    float: inherit;
+    width: 1160px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    float: left;
+    width: 1160px;
+    height: 100px;
+    background-color: white;
+    color:	#708090;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+    h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 21px;
+    font-weight: 500;
+    color: #708090;
+}
+
+nav {
+    float: left;
+    width: 1160px;
+    height: 30px;
+    background-color:	#2f3178;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+    padding: 15px 0px 3px 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: #FF345A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #708090;
+    text-decoration: underline;
+}
+
+article {
+    float: left;
+    width: 600px;
+    background-color: #DCDCDC;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    padding: 20px 20px 20px 20px;
+    height: 400px;
+}
+
+section {
+    
+}
+
+aside {
+    float: right;
+    width: 500px;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    padding: 10px 10px 10px 10px;
+    height: 400px;
+}
+
+footer {
+    text-align: right;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* contact form */
+
+.contact_form h2, .contact_form label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.contact_form ul {
+    width: 100%;
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact_form li {
+    padding: 5px;
+    border-bottom: 1px solid #778ba0;
+    position: relative;
+    text-align: left;
+}
+
+.required_notification, .form_hint {
+    font-size: 12px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+*:focus{
+    outline: none;
+}
+
+.contact_form label {
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact_form input {
+     width: 315px;
+     height: 20px;
+
+}
+
+.contact_form textarea {
+    width: 315px;
+}
+
+.contact_form button {
+    margin-left: 115px;
+}
+
+.contact_form input, .contact_form textarea {
+    border: 1px solid #aaaaaa;
+    box-shadow: 0px 0px 3px #ccc, 0px 2px 5px #eeeeee inset;
+    border-radius: 5px;
+    padding-left: 15px;
+    -moz-transition: padding .2s;
+    -webkit-transition: padding .2s;
+    -o-transition: padding .2s;
+    transition: padding .2s;
+}
+
+.contact_form input:focus, .contact_form textarea:focus {
+    background: #cacfd4;
+    border: 1px solid;
+    box-shadow: 0px 0px 3px #ccc;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.contact_form input:required, .contact_form textarea:required {
+    background:#fff url(../images/red_asterisk.png) no-repeat 95% center;
+}
+
+.contact_form input:valid, .contact_form textarea:valid {
+    background:#fff url(../images/valid.png) no-repeat 95% center;
+    border-color: green;
+    box-shadow: 0px 0px 5px #708090;
+}
+
+.contact_form input:invalid, .contact_form textarea:invalid {
+    background:#fff url(../images/invalid.png) no-repeat 95% center;
+    border-color: red;
+    box-shadow: 0px 0px 5px #708090;
+}
+
+button.submit {
+    background-color: #2f3178;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #2f3178;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+button.submit:hover {
+    cursor: pointer;
+}
+
+button.submit:active {
+    background-color: #708090;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #708090;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.form_hint {
+    background: #FF345A;
+    border-radius: 3px 3px 3px 3px;
+    color: #fff;
+    margin-left: 10px;
+    padding: 1px 5px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    display: none;
+}
+
+.form_hint::before{
+    content: '\25C0';
+    position: absolute;
+    color: #FF345A;
+    top: 0px;
+    left: -7px;
+}
+
+.contact_form input:focus + .form_hint { display: inline;}
+
+.contact_form input:required:valid + .form_hint {
+    background: #18b118;
+    /* display: none; */
+}
+
+.contact_form input:required:valid + .form_hint::before {
+    color: #18b118;
+}

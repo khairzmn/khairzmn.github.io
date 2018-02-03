@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>My Webpage</title>
+
+        <link rel="stylesheet" href="./css/style01.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Institute of Systems Science</h1>
+            </header>
+            <nav>
+                <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">About Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">Courses</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">Contact</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </nav>
+
+
+            <article>
+                <section>
+                    <form class="contact_form" action="#" method="post" name="contact_form">
+                        <ul>
+                            <li>
+                                <h2>Contact Us</h2>
+                                <span class="required_notification"> * denotes required fields</span>
+                            </li>
+                            <li>
+                                <label for="name"> Name</label>
+                                <input type="text" placeholder="Insert Name" required />
+                                <span class="form_hint"> Name required</span>
+                            </li>
+                            <li>
+                                <label for="email"> Email </label>
+                                <input type="email" placeholder="Insert Email" required />
+                                <span class="form_hint">Email required</span>
+                             </li>
+                             <li>
+                                 <label for="url">Website</label>
+                                 <input type="url" placeholder="Insert URL" required pattern="(http|https)://.+" />
+                                 <span class="form_hint"> Enter valid url</span>
+                             </li>
+                             <li>
+                                 <label for="comments"> Comments</label>
+                                 <textarea name="message" cols="50" rows="10"></textarea>
+                             </li>
+                             <li>
+                                 <button class="submit" type="submit">Submit Form</button>
+                             </li>
+                        </ul>
+                    </form>
+                </section>
+            </article>
+
+
+            <aside>
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href='#'>CSS Foundation</a></li>
+                        <li><a href='#'>HTML Foundation</a></li>
+                        <li><a href='#'>JS Foundation</a></li>
+                    </ul>
+                <br>
+                    <p>     We provide thought leadership in organisational innovation and 
+                            business transformation.
+                    </p>
+                    <p>     We also conduct research, organise management, technology and innovation 
+                            update seminars, and provide consulting services to the industry.
+                    </p>
+                    <p>
+                            <a href="#" Contact Us> Click here</a> to find out more.
+                    </p>
+            </aside>
+
+            <footer>
+                Copyright &copy; Institute of Systems Science
+            </footer>
+        </div>
+    </body>
+
+</html>

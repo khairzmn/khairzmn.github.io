@@ -1,0 +1,16 @@
+h1 {
+    background-color: #ffffff;
+    color: #DAA520;
+    width: 240px;
+}
+
+p {
+    background: #DAA520;
+    color: black;
+    width: 240px;
+}
+
+.nice {
+    font-weight: bold;
+    background: white;
+}
