@@ -1,0 +1,36 @@
+img {
+    width: 12px;
+    opacity: 0.3;
+    transform: rotate(0deg);
+    transition-duration: 200ms;
+    transition-property: opacity, transform, box-shadow;
+    transition-timing-function: linear;
+    box-shadow: 0px 0px 0px black;
+}
+
+img:hover {
+    transform: rotate(180deg);
+    box-shadow: 2px 2px 2px black;
+    opacity: 1.0;
+}
+
+.bigger {
+    font-size: 1.5em;
+}
+
+.top {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+    width: 100%;
+}
+
+.away {
+    position: relative;
+    scroll-behavior: auto;
+    top: 5em;
+}
